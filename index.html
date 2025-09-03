@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airline Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Flight</h1>
+
+    <!-- Flight Search Form -->
+    <form id="searchForm">
+      <label>From:</label>
+      <input type="text" id="from" required>
+
+      <label>To:</label>
+      <input type="text" id="to" required>
+
+      <label>Date:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Search Flights</button>
+    </form>
+
+    <!-- Search Results -->
+    <div id="results"></div>
+
+    <!-- Booking Form -->
+    <div id="bookingForm" class="hidden">
+      <h2>Enter Passenger Details</h2>
+      <label>Name:</label>
+      <input type="text" id="passengerName" required>
+
+      <label>Email:</label>
+      <input type="email" id="passengerEmail" required>
+
+      <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+    <!-- Confirmation -->
+    <div id="confirmation" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
